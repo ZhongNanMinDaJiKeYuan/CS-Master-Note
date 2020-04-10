@@ -12,8 +12,8 @@ Session是服务器和浏览器进行一次会话的过程，Session存储着会
 
 Session机制原理：<br>
 浏览器向服务器发送创建一个Session的请求，服务器会首先检查请求中是否包含一个用于标识Session的字段SessionID。<br>
-如果请求中存在SessionID，说明服务器已经为浏览器创建了一个Session会话，服务器会根据SessionID的值来检索Session并响应给浏览器。<br>
-如果请求中不存在SessionID，说明服务器没有为浏览器创建一个Session会话，服务器会创建一个Session会话并生成一个SessionID与之关联。<br>
+@ 如果请求中存在SessionID，说明服务器已经为浏览器创建了一个Session会话，服务器会根据SessionID的值来检索Session并响应给浏览器。<br>
+@ 如果请求中不存在SessionID，说明服务器没有为浏览器创建一个Session会话，服务器会创建一个Session会话并生成一个SessionID与之关联。<br>
 
 Session的生命周期：<br>
 Session的生命周期是指Servlet容器创建Session对象到销毁的过程，Servlet容器会根据Session对象设置的有效时间来管理Session，当达到Session有效时间就销毁Session对象。Session对象生成以后，浏览器每访问一次服务器，都会更新一次Session对象的最后访问时间，便于服务器维护Session。
