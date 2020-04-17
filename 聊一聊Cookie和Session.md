@@ -25,7 +25,7 @@ Session的生命周期是指Servlet容器创建Session对象到销毁的过程�
 4、隐私策略不同：Cookie存储在浏览器中，容易被窃取数据信息。Session存储在服务器中，较Cookie安全。<br>
 5、存储大小不同：单个Cookie保存的数据大小不能超过4KB，Session可以存储的数据量要远远超过Cookie。<br>
 ## 4.Cookie和Session的关联
-![图片](https://github.com/zhuqianqian1996/CS-Master-Note/blob/master/%E5%9B%BE%E7%89%87/CookieAndSession.bmp)
+![Cookie和Session的关联](https://github.com/zhuqianqian1996/CS-Master-Note/blob/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%9B%BE%E7%89%87/CookieAndSession.bmp)
 
 浏览器第一次请求服务器的时候，服务器会根据所提交的请求信息来创建对应的Session对象，请求返回的时候由服务器创建一个Cookie将Session对象的SessionID返回给浏览器。浏览器接收到服务器返回的SessionID信息之后，会将该信息保存在Cookie中，并记录该SessionID信息属于哪个域名。<br>
 
